@@ -1,0 +1,20 @@
+DECLARE
+    TIPO_PRODUCTO CHAR(1);
+BEGIN
+    TIPO_PRODUCTO:= UPPER('d');
+    IF TIPO_PRODUCTO='A' THEN
+          DBMS_OUTPUT.PUT_LINE('Electrónica');
+    ELSIF TIPO_PRODUCTO='B' THEN
+          DBMS_OUTPUT.PUT_LINE('Informática');
+    ELSIF TIPO_PRODUCTO='C' THEN
+          DBMS_OUTPUT.PUT_LINE('Ropa');
+    ELSIF TIPO_PRODUCTO='D' THEN
+          DBMS_OUTPUT.PUT_LINE('Música');
+    ELSIF TIPO_PRODUCTO='B' THEN
+          DBMS_OUTPUT.PUT_LINE('Libros');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('El código es incorrecto');
+    END IF;
+END;
+
+
